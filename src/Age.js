@@ -1,8 +1,11 @@
+import PropTypes from "prop-types";
+
 function Age(props){
-    return props.age !== undefined ?
-        <h1>You are {props.age} years old!</h1>
-    :
-        <h1>I don't know your age!</h1>
+    return <h1>You are {props.age} years old!</h1>
+}
+
+Age.propTypes = {
+    age : PropTypes.number.isRequired
 }
 
 export default Age;
