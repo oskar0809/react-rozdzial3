@@ -7,7 +7,7 @@ class Book extends Component{
     constructor(props){
         super(props);
         this.state = {
-            book: [
+            books: [
                 {
                     title: "Hobbit",
                     author: "J. R. Tolkien",
