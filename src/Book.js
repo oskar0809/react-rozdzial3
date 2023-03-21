@@ -38,7 +38,7 @@ class Book extends Component{
                 <Header/>
                 {
                     this.state.books.map((book, i) =>
-                        <BookDescription key = {i} {...book} deleteBook={this.deleteSingleBook}/>
+                        <BookDescription key = {i} book={book}/>
                     )
                 }
                 <Footer/>

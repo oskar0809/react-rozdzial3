@@ -11,18 +11,18 @@ import { number } from 'prop-types';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-    {/* <Book/> */}
+        <Book/>
         {/* <Age age={20}/>
         <Age/> */}
         {/* <Props propArray={[1, 2, 3]}/> */}
-        <Props 
+        {/* <Props 
             propArray={[3,4,5]}
             propFunc={number => {
                 return number * -1;
             }}
             propNumber={500}
             propObject={{book: "Książka 2"}}
-            propString="Tekst 2"/>
+            propString="Tekst 2"/> */}
     </React.StrictMode>
 );
 
