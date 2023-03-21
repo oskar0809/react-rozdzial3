@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Book from './Book';
+import Age from './Age'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Book/>
-  </React.StrictMode>
+    <React.StrictMode>
+    {/* <Book/> */}
+        <Age age="20"/>
+        <Age/>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
