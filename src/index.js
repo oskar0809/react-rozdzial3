@@ -7,11 +7,13 @@ import Book from './Book';
 import Age from './Age'
 import Props from './Props'
 import { number } from 'prop-types';
+import Counter from './Counter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <Book/>
+        <Counter/>
+        {/* <Book/> */}
         {/* <Age age={20}/>
         <Age/> */}
         {/* <Props propArray={[1, 2, 3]}/> */}
