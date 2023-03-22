@@ -5,21 +5,18 @@ class Counter extends Component {
         this.state = {
             counter: 0
         };
-        this.increase = this.increase.bind(this);
-        this.decrease = this.decrease.bind(this);
-        this.clear = this.clear.bind(this);
     }
-    increase(){
+    increase = () => {
         this.setState((prevState) => ({
             counter: prevState.counter + 1
         }));
     }
-    decrease(){
+    decrease = () => {
         this.setState((prevState) => ({
             counter: prevState.counter - 1
         }));
     }
-    clear(){
+    clear = () => {
         this.setState({
             counter: 0
         });
