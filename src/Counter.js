@@ -21,6 +21,11 @@ class Counter extends Component {
             counter: 0
         });
     }
+    setValue = value =>{
+        this.setState({
+            counter: value
+        });
+    }
     render(){
         return(
             <div>
@@ -31,6 +36,8 @@ class Counter extends Component {
                 <button onClick={this.decrease}>Zmniejsz o jeden</button>
                 <br/>
                 <button onClick={this.clear}>Zeruj</button>
+                <br/>
+                <button onClick={()=> this.setValue(parseInt(prompt("Podaj wartość")))}>Podaj wartość</button>
             </div>
         );
     }
